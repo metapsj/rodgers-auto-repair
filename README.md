@@ -1,3 +1,3 @@
 # Rodgers Auto Repair
 
-a microsite / landing page website for rodgers auto repair
+a landing page website for rodgers auto repair
