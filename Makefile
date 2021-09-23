@@ -1,7 +1,7 @@
 .PHONY: build deploy
 
 build:
-	cp src/index.html dist/
+	cp -R src/* dist/
 
 deploy:
 	git subtree push --prefix dist origin gh-pages
