@@ -18,6 +18,10 @@
       body {
         background-color: var(--main-bg-color);
       }
+
+      .bg-engine-hoisted {
+        background-image: url(../images/photos/2021-05-21.bryan-with-engine-hoisted.jpg);
+      }
     </style>
 
     <script type="module">
@@ -27,26 +31,57 @@
     <title>Hero - Rodgers Auto Repair</title>
   </head>
   <body>
-    <!-- hero -->
-    <header class="bg-indigo-700">
-      <div
-        class="flex flex-row justify-between items-center py-3 max-w-2xl mx-auto font-light text-gray-100 uppercase tracking-wide"
+    <main class="bg-white mx-auto max-w-7xl">
+      <!-- hero -->
+      <section
+        class="border-t-4 border-b-4 border-indigo-700 bg-engine-hoisted bg-gray-300 bg-blend-screen bg-cover bg-top bg-no-repeat"
       >
-        <a href="#" class="hover:text-pink-600">
-          <img
-            class="h-16 w-16"
-            src="./images/logos/rodgers-gear-icon.svg"
-            alt="Rodgers Auto Repair"
-          />
-        </a>
-        <nav class="space-x-4">
-          <a href="#services" class="hover:text-pink-600">Services</a>
-          <a href="#gallery" class="hover:text-pink-600">Gallery</a>
-          <a href="#about" class="hover:text-pink-600">About</a>
-          <a href="#contact" class="hover:text-pink-600">Contact</a>
-        </nav>
-      </div>
-    </header>
-    <!-- /hero -->
+        <div class="text-center py-10 px-4">
+          <h1 class="tracking-tight font-extrabold text-gray-900 text-6xl">
+            <span class="block">Rodgers Auto Repair</span>
+            <span
+              class="block text-indigo-600 uppercase text-2xl tracking-wider"
+              >ASE Certified Master Technician</span
+            >
+            <span
+              class="block text-sm font-medium italic text-pink-600 tracking-widest"
+            >
+              Serving Thurston County Washington and Surrounding Area
+            </span>
+          </h1>
+          <p class="font-light text-lg text-gray-700 mt-5 max-w-xl mx-auto">
+            <span class="uppercase tracking-wider">
+              Open Weekdays, Monday through Friday, 8AM to 5PM
+            </span>
+            <br />
+            <br />
+            8612 194th Ave SW
+            <br />
+            Rochester, WA 98579
+            <br />
+            (360) 701-4808
+          </p>
+          <div class="my-8 flex justify-center">
+            <div class="rounded-md shadow">
+              <a
+                href="#call"
+                class="w-full flex items-center justify-center border border-transparent font-medium rounded-md text-gray-100 bg-indigo-600 hover:bg-indigo-700 py-4 text-lg px-10"
+              >
+                &nbsp;&nbsp;&nbsp;&nbsp;Call&nbsp;&nbsp;&nbsp;&nbsp;
+              </a>
+            </div>
+            <div class="mt-0 ml-3">
+              <a
+                href="#schedule"
+                class="w-full flex items-center justify-center border border-transparent font-medium rounded-md text-indigo-700 bg-indigo-50 hover:bg-indigo-200 py-4 text-lg px-10"
+              >
+                Schedule
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /hero -->
+    </main>
   </body>
 </html>
