@@ -8,7 +8,7 @@ const locationInfo = {
 const map = L.map("leafletMap", {
   center: [46.80677, -123.06341],
   minZoom: 6,
-  zoom: 9,
+  zoom: 10,
 });
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
