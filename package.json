@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/metapsj/rodgers-auto-repair/issues"
   },
-  "homepage": "https://github.com/metapsj/rodgers-auto-repair#readme"
+  "homepage": "https://github.com/metapsj/rodgers-auto-repair#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.16"
+  }
 }
