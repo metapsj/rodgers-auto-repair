@@ -9,11 +9,14 @@ docs/
 node_modules/
 package-lock.json
 
+
+!assets/.keep
+
 assets/styles/*
 !assets/styles/.keep
 
 assets/javascripts/*
 !assets/javascripts/.keep
 
-assets/webfonts/
+!assets/webfonts/.keep
 
