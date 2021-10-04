@@ -14,7 +14,9 @@
     "debug-js": "echo \"Error: debug-js is not defined",
     "build-js": "echo \"Error: build-js is not defined",
     "start": "concurrently \"npm:watch-css\" \"npm:watch-js\"",
-    "dev": "concurrently \"npm:watch-css\" \"npm:watch-js\""
+    "dev": "concurrently \"npm:watch-css\" \"npm:watch-js\"",
+    "copy": "copyfiles src/index.html \"assets/**/*\" dist",
+    "deploy": "npm run build-css && npm run build-js && npm run copy"
   },
   "repository": {
     "type": "git",
