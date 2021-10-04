@@ -9,7 +9,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-css": "postcss src/styles/main.css -i assets/styles/main.css -w",
-    "build-css": "postcss src/styles/main.css -o assets/styles/main.css"
+    "build-css": "postcss src/styles/main.css -o assets/styles/main.css",
+    "watch-js": "echo \"Error: watch-js is not defined",
+    "debug-js": "echo \"Error: debug-js is not defined",
+    "build-js": "echo \"Error: build-js is not defined",
+    "start": "concurrently \"npm:watch-css\" \"npm:watch-js\"",
+    "dev": "concurrently \"npm:watch-css\" \"npm:watch-js\""
   },
   "repository": {
     "type": "git",
@@ -26,7 +31,9 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
+    "concurrently": "^6.3.0",
     "cssnano": "^5.0.8",
+    "esbuild": "^0.13.3",
     "postcss": "^8.3.8",
     "postcss-cli": "^9.0.1",
     "postcss-import": "^14.0.2"
