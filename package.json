@@ -1,0 +1,22 @@
+{
+  "name": "rodgers-auto-repair",
+  "version": "1.0.0",
+  "description": "a landing page website for rodgers auto repair",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metapsj/rodgers-auto-repair.git"
+  },
+  "author": "metapsj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/metapsj/rodgers-auto-repair/issues"
+  },
+  "homepage": "https://github.com/metapsj/rodgers-auto-repair#readme"
+}
