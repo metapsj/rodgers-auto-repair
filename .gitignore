@@ -1,9 +1,19 @@
+.DS_Store
+
 /.direnv/*
 !/.direnv/.keep
 
-.DS_Store
-
 .env
+
 docs/
 node_modules/
 package-lock.json
+
+assets/styles/*
+!assets/styles/.keep
+
+assets/javascripts/*
+!assets/javascripts/.keep
+
+assets/webfonts/
+
