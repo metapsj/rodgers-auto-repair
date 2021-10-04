@@ -18,5 +18,6 @@ assets/styles/*
 assets/javascripts/*
 !assets/javascripts/.keep
 
+assets/webfonts/*
 !assets/webfonts/.keep
 
