@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/metapsj/rodgers-auto-repair#readme",
   "dependencies": {
+    "leaflet": "^1.7.1",
     "tailwindcss": "^2.2.16"
   },
   "devDependencies": {
