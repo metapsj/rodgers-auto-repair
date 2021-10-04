@@ -1,5 +1,3 @@
-import "leaflet";
-
 const locationInfo = {
   name: "Rodgers Auto Repair",
   url: "https://goo.gl/maps/Mr2qViGCXq3auc2k8",
