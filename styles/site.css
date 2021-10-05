@@ -8,13 +8,5 @@ body {
 }
 
 .bg-engine-hoisted {
-  background-image: url(../../assets/images/photos/2021-05-21.bryan-with-engine-hoisted.jpg);
-}
-
-/* deprecate the following */
-.bg-noisy-texture-0 {
-  background: url(../../assets/images/patterns/noisy-texture-100x100-o56.00000000000001-d50-c-4338ca-t0.png);
-}
-.bg-noisy-texture-1 {
-  background: url(../../assets/images/patterns/noisy-texture-100x100-o42-d51-c-4338ca-t0.png);
+  background-image: url(../assets/photos/2021-05-21.bryan-with-engine-hoisted.jpg);
 }
