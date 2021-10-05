@@ -1,6 +1,6 @@
 const purgecss = require("@fullhuman/postcss-purgecss")({
   // Specify the paths to all of the template files in your project
-  content: ["./index.html"],
+  content: ["./src/index.html"],
   // This is the function used to extract class names from your templates
   defaultExtractor: (content) => {
     // Capture as liberally as possible, including things like `h-(screen-1.5)`
@@ -19,7 +19,7 @@ module.exports = {
     require("tailwindcss")(),
     require("autoprefixer")(),
     require("postcss-copy")({
-      dest: "assets/webfonts",
+      dest: "public/assets/webfonts",
     }),
     ...(process.env.ENV_BUILD === "prod" ? [purgecss] : []),
     ...(process.env.ENV_BUILD === "prod" ? [require("cssnano")()] : []),
