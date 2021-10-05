@@ -3,49 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
 
-    <!-- icons -->
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./assets/img/apple-icon.png"
-    />
-
-    <!-- stylesheets -->
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
     <link
       href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
       rel="stylesheet"
       integrity="sha384-VzLXTJGPSyTLX6d96AxgkKvE/LRb7ECGyTxuwtpjHnVWVZs2gp5RDjeM/tgBnVdM"
       crossorigin="anonymous"
     />
-    <link type="text/css" href="assets/styles/main.css" rel="stylesheet" />
-    <style>
-      :root {
-        /* whitesmoke */
-        --main-bg-color: #f5f5f5;
-      }
+    <link type="text/css" href="styles/main.css" rel="stylesheet" />
 
-      body {
-        background-color: var(--main-bg-color);
-      }
-
-      .bg-engine-hoisted {
-        background-image: url(./images/photos/2021-05-21.bryan-with-engine-hoisted.jpg);
-      }
-      .bg-noisy-texture-0 {
-        background: url(./images/patterns/noisy-texture-100x100-o56.00000000000001-d50-c-4338ca-t0.png);
-      }
-      .bg-noisy-texture-1 {
-        background: url(./images/patterns/noisy-texture-100x100-o42-d51-c-4338ca-t0.png);
-      }
-    </style>
-
-    <!-- javascripts -->
     <script
       src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha384-RFZC58YeKApoNsIbBxf4z6JJXmh+geBSgkCQXFyh+4tiFSJmJBt+2FbjxW7Ar16M"
@@ -70,7 +37,7 @@
         <a href="#" class="hover:text-pink-600">
           <img
             class="h-16 w-16"
-            src="./images/logos/rodgers-gear-icon.svg"
+            src="assets/logos/rodgers-gear-icon.svg"
             alt="Rodgers Auto Repair"
           />
         </a>
@@ -143,7 +110,7 @@
           >
             Services
           </h1>
-          <ul class="mx-2 md:mx-12 flex flex-wrap justify-around">
+          <ul class="mx-2 md:mx-12 flex flex-wrap justify-between">
             <li
               class="flex items-center my-0.5 w-1/2 md:w-1/3 whitespace-nowrap"
             >
@@ -233,7 +200,7 @@
                 </svg>
               </span>
               <span class="mx-2 text-lg font-light tracking-wider">
-                30K/60K/90K Service
+                30/60/90K Service
               </span>
             </li>
             <li
@@ -371,30 +338,7 @@
                 </svg>
               </span>
               <span class="mx-2 text-lg font-light tracking-wider">
-                Belts &amp; Hoses
-              </span>
-            </li>
-            <li
-              class="flex items-center my-0.5 w-1/2 md:w-1/3 whitespace-nowrap"
-            >
-              <span
-                class="w-3.5 h-3.5 m-1.5 rounded-full bg-pink-500 flex justify-center items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  class="w-2.5 h-2.5 stroke-current stroke-2 text-white"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </span>
-              <span class="mx-2 text-lg font-light tracking-wider">
-                Radiator
+                Radiator &amp; Hoses
               </span>
             </li>
             <li
@@ -670,30 +614,7 @@
                 </svg>
               </span>
               <span class="mx-2 text-lg font-light tracking-wider">
-                All Wheel Drive
-              </span>
-            </li>
-            <li
-              class="flex items-center my-0.5 w-1/2 md:w-1/3 whitespace-nowrap"
-            >
-              <span
-                class="w-3.5 h-3.5 m-1.5 rounded-full bg-pink-500 flex justify-center items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  class="w-2.5 h-2.5 stroke-current stroke-2 text-white"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </span>
-              <span class="mx-2 text-lg font-light tracking-wider">
-                Air Conditioning
+                AWD &amp; 4WD
               </span>
             </li>
             <li
@@ -831,7 +752,7 @@
                 </svg>
               </span>
               <span class="mx-2 text-lg font-light tracking-wider">
-                Engine Swaps
+                Engine Replacement
               </span>
             </li>
           </ul>
@@ -850,96 +771,96 @@
           <div class="flex flex-wrap justify-center">
             <img
               class="m-1"
-              src="./images/photos/2021-05-21.engine-block-test-fluid.jpg"
+              src="./assets/photos/2021-05-21.engine-block-test-fluid.jpg"
               alt=""
             />
             <img
               class="m-1"
-              src="./images/photos/2021-05-21.race-car-progress-painted.jpg"
+              src="./assets/photos/2021-05-21.race-car-progress-painted.jpg"
               alt=""
             />
             <img
               class="m-1"
-              src="./images/photos/2021-05-21.timing-belt-with-oil-filter.jpg"
+              src="./assets/photos/2021-05-21.timing-belt-with-oil-filter.jpg"
               alt=""
             />
             <img
               class="m-1"
-              src="./images/photos/2021-05-21.transmission-bench.jpg"
-              alt=""
-            />
-            <!--
-            <img
-              class="m-1"
-              src="./images/photos/2021-05-21.transmission-close-up.jpg"
-              alt=""
-            />
-            -->
-            <img
-              class="m-1"
-              src="./images/photos/2021-05-21.valve-deposits-direct-injection-dirty.jpg"
-              alt=""
-            />
-            <img
-              class="m-1"
-              src="./images/photos/2021-06-03.thermometer-brake-calipers-02.jpg"
+              src="./assets/photos/2021-05-21.transmission-bench.jpg"
               alt=""
             />
             <!--
             <img
               class="m-1"
-              src="./images/photos/2021-07-05.cam-timing-gear-close-up.jpg"
+              src="./assets/photos/2021-05-21.transmission-close-up.jpg"
               alt=""
             />
-            <img class="m-1" src="./images/photos/2021-07-22.clutch.jpg" alt="" />
             -->
             <img
               class="m-1"
-              src="./images/photos/2021-07-22.rear-main-seal-new.jpg"
+              src="./assets/photos/2021-05-21.valve-deposits-direct-injection-dirty.jpg"
+              alt=""
+            />
+            <img
+              class="m-1"
+              src="./assets/photos/2021-06-03.thermometer-brake-calipers-02.jpg"
               alt=""
             />
             <!--
             <img
               class="m-1"
-              src="./images/photos/2021-07-22.throw-out.jpg"
+              src="./assets/photos/2021-07-05.cam-timing-gear-close-up.jpg"
               alt=""
             />
-            <img
-              class="m-1"
-              src="./images/photos/2021-07-22.timing-cover-reseal-toyota-02.jpg"
-              alt=""
-            />
+            <img class="m-1" src="./assets/photos/2021-07-22.clutch.jpg" alt="" />
             -->
             <img
               class="m-1"
-              src="./images/photos/2021-07-22.timing-cover-reseal-toyota-03.jpg"
-              alt=""
-            />
-            <img
-              class="m-1"
-              src="./images/photos/2021-07-22.timing-cover-reseal-toyota-04.jpg"
-              alt=""
-            />
-            <img
-              class="m-1"
-              src="./images/photos/2021-07-22.timing-cover-reseal-toyota-06.jpg"
-              alt=""
-            />
-            <img
-              class="m-1"
-              src="./images/photos/2021-08-04.every-car-needs-something-03.jpg"
+              src="./assets/photos/2021-07-22.rear-main-seal-new.jpg"
               alt=""
             />
             <!--
             <img
               class="m-1"
-              src="./images/photos/2021-08-04.every-car-needs-something-04.jpg"
+              src="./assets/photos/2021-07-22.throw-out.jpg"
+              alt=""
+            />
+            <img
+              class="m-1"
+              src="./assets/photos/2021-07-22.timing-cover-reseal-toyota-02.jpg"
               alt=""
             />
             -->
             <img
               class="m-1"
-              src="./images/photos/2021-08-25.broken-exhaust-bolts-studs-05.jpg"
+              src="./assets/photos/2021-07-22.timing-cover-reseal-toyota-03.jpg"
+              alt=""
+            />
+            <img
+              class="m-1"
+              src="./assets/photos/2021-07-22.timing-cover-reseal-toyota-04.jpg"
+              alt=""
+            />
+            <img
+              class="m-1"
+              src="./assets/photos/2021-07-22.timing-cover-reseal-toyota-06.jpg"
+              alt=""
+            />
+            <img
+              class="m-1"
+              src="./assets/photos/2021-08-04.every-car-needs-something-03.jpg"
+              alt=""
+            />
+            <!--
+            <img
+              class="m-1"
+              src="./assets/photos/2021-08-04.every-car-needs-something-04.jpg"
+              alt=""
+            />
+            -->
+            <img
+              class="m-1"
+              src="./assets/photos/2021-08-25.broken-exhaust-bolts-studs-05.jpg"
               alt=""
             />
           </div>
@@ -967,13 +888,14 @@
                 Let me introduce myself.
               </p>
               <p>
-                My name is Bryan, the owner and principal technician at Rodgers
-                Auto Repair.
+                My name is Bryan, the owner and technician at Rodgers Auto
+                Repair.
               </p>
               <p class="my-3">
-                I am an ASE Certified Master Technician with over 15 years of
-                experience. I have repaired and maintained automobiles of all
-                makes and models.
+                I am ASE Master Certified with Factory Training and
+                Certification from VW. I have over 15 years of experience on all
+                makes and models with specialized experience in VW, Subaru, BMW,
+                and Toyota.
               </p>
               <p class="my-3">
                 I pride myself in honest affordable quality workmanship.
@@ -1019,7 +941,7 @@
         </ul>
         <div class="my-4 flex justify-center">
           <!-- facebook -->
-          <a href="#">
+          <a href="https://www.facebook.com/RodgersServicesLLC" target="_blank">
             <svg
               class="mx-1 w-5 h-5 fill-current"
               role="img"
@@ -1072,7 +994,10 @@
           </a>
           <!-- nextdoor -->
           <!-- google -->
-          <a href="#">
+          <a
+            href="https://www.google.com/search?q=rodgers+auto+repair+rochester+wa&rlz=1C5CHFA_enUS804US804&oq=rodgers+auto+repair+rochester+wa&aqs=chrome.0.69i59l3j69i60j69i61j69i60.5964j0j7&sourceid=chrome&ie=UTF-8"
+            target="_blank"
+          >
             <svg
               class="mx-1 w-5 h-5 fill-current"
               role="img"
@@ -1122,8 +1047,7 @@
     <!-- templates /-->
 
     <!-- onload -->
-    <script type="text/javascript" src="../javascripts/main.js"></script>
-    <script type="text/javascript" src="./javascripts/leaflet-map.js"></script>
+    <script type="text/javascript" src="javascripts/leaflet-map.js"></script>
     <script>
       // TODO:
     </script>

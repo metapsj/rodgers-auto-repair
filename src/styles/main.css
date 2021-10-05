@@ -3,7 +3,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import "../node_modules/leaflet/dist/leaflet.css";
+/* @import "../../node_modules/leaflet/dist/leaflet.css"; */
 
 /*! purgecss start ignore */
 @import "./site.css";

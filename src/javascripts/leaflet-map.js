@@ -1,8 +1,10 @@
+/* import L from "leaflet"; */
+
 const locationInfo = {
   name: "Rodgers Auto Repair",
   url: "https://goo.gl/maps/Mr2qViGCXq3auc2k8",
-  lat: 46.80677,
-  lng: -123.06341,
+  lat: 46.80661,
+  lng: -123.06321,
 };
 
 const map = L.map("leafletMap", {

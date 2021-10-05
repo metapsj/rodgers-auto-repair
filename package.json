@@ -8,14 +8,14 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-css": "postcss src/styles/main.css -i assets/styles/main.css -w",
-    "build-css": "postcss src/styles/main.css -o assets/styles/main.css",
-    "watch-js": "echo \"Error: watch-js is not defined",
-    "debug-js": "echo \"Error: debug-js is not defined",
-    "build-js": "echo \"Error: build-js is not defined",
+    "watch-css": "postcss src/styles/main.css -i public/styles/main.css -w",
+    "build-css": "postcss src/styles/main.css -o public/styles/main.css",
+    "watch-js": "esbuild src/javascripts/main.js --bundle --sourcemap=inline --target=es2016 --outfile=public/javascripts/main.js --watch",
+    "debug-js": "esbuild src/javascripts/main.js --bundle --sourcemap=inline --target=es2016 --outfile=public/javascripts/main.js --servedir=public",
+    "build-js": "esbuild src/javascripts/leaflet-map.js --bundle --sourcemap=inline --minify --target=es2016 --outfile=public/javascripts/leaflet-map.js",
     "start": "concurrently \"npm:watch-css\" \"npm:watch-js\"",
     "dev": "concurrently \"npm:watch-css\" \"npm:watch-js\"",
-    "copy": "copyfiles src/index.html \"assets/**/*\" dist",
+    "copy": "copyfiles -u 1 src/index.html \"src/assets/**/*\" public/",
     "deploy": "npm run build-css && npm run build-js && npm run copy"
   },
   "repository": {
@@ -40,6 +40,7 @@
     "esbuild": "^0.13.3",
     "postcss": "^8.3.8",
     "postcss-cli": "^9.0.1",
+    "postcss-copy": "^7.1.0",
     "postcss-import": "^14.0.2"
   }
 }
