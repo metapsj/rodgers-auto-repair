@@ -1,7 +1,7 @@
 .PHONY: build deploy
 
 build:
-	cp -R src/* dist/
+	cp -R public/* dist/
 	git add dist/
 	git commit -m "build dist/"
 	git push -u origin main
