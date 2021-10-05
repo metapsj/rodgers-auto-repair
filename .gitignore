@@ -13,3 +13,4 @@ package-lock.json
 /public/*
 !/public/.keep
 !/public/robots.txt
+!/public/disavow_links.txt
