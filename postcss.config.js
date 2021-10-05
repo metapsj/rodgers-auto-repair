@@ -17,6 +17,7 @@ module.exports = {
   plugins: [
     require("postcss-import")(),
     require("tailwindcss")(),
+    require("postcss-nested")(),
     require("autoprefixer")(),
     require("postcss-copy")({
       dest: "public/assets/webfonts",
