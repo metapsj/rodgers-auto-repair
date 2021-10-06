@@ -15,7 +15,7 @@
     "build-js": "esbuild src/javascripts/leaflet-map.js --bundle --sourcemap=inline --minify --target=es2016 --outfile=public/javascripts/leaflet-map.js",
     "start": "concurrently \"npm:watch-css\" \"npm:watch-js\"",
     "dev": "concurrently \"npm:watch-css\" \"npm:watch-js\"",
-    "copy": "copyfiles -u 1 src/index.html \"src/**/*\" public/",
+    "copy": "copyfiles -u 1 src/index.html \"src/assets/**/*\" public/",
     "deploy": "npm run build-css && npm run build-js && npm run copy"
   },
   "repository": {
