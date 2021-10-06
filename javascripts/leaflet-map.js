@@ -1,5 +1,29 @@
-(()=>{var t={name:"Rodgers Auto Repair",url:"https://goo.gl/maps/Mr2qViGCXq3auc2k8",lat:46.80661,lng:-123.06321},a=L.map("leafletMap",{center:[46.80677,-123.06341],minZoom:6,zoom:10});L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',subdomains:["a","b","c"]}).addTo(a);var e=L.marker([t.lat,t.lng]).addTo(a);e.bindPopup(`
-  <b>${t.name}</b><br />
-  <a href="${t.url}" target="_blank">Directions</a>
-`);e.openPopup();})();
-//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsiLi4vLi4vc3JjL2phdmFzY3JpcHRzL2xlYWZsZXQtbWFwLmpzIl0sCiAgInNvdXJjZXNDb250ZW50IjogWyIvKiBpbXBvcnQgTCBmcm9tIFwibGVhZmxldFwiOyAqL1xuXG5jb25zdCBsb2NhdGlvbkluZm8gPSB7XG4gIG5hbWU6IFwiUm9kZ2VycyBBdXRvIFJlcGFpclwiLFxuICB1cmw6IFwiaHR0cHM6Ly9nb28uZ2wvbWFwcy9NcjJxVmlHQ1hxM2F1YzJrOFwiLFxuICBsYXQ6IDQ2LjgwNjYxLFxuICBsbmc6IC0xMjMuMDYzMjEsXG59O1xuXG5jb25zdCBtYXAgPSBMLm1hcChcImxlYWZsZXRNYXBcIiwge1xuICBjZW50ZXI6IFs0Ni44MDY3NywgLTEyMy4wNjM0MV0sXG4gIG1pblpvb206IDYsXG4gIHpvb206IDEwLFxufSk7XG5cbkwudGlsZUxheWVyKFwiaHR0cHM6Ly97c30udGlsZS5vcGVuc3RyZWV0bWFwLm9yZy97en0ve3h9L3t5fS5wbmdcIiwge1xuICBhdHRyaWJ1dGlvbjpcbiAgICAnJmNvcHk7IDxhIGhyZWY9XCJodHRwczovL3d3dy5vcGVuc3RyZWV0bWFwLm9yZy9jb3B5cmlnaHRcIiB0YXJnZXQ9XCJfYmxhbmtcIj5PcGVuU3RyZWV0TWFwPC9hPicsXG4gIHN1YmRvbWFpbnM6IFtcImFcIiwgXCJiXCIsIFwiY1wiXSxcbn0pLmFkZFRvKG1hcCk7XG5cbmNvbnN0IG1hcmtlciA9IEwubWFya2VyKFtsb2NhdGlvbkluZm8ubGF0LCBsb2NhdGlvbkluZm8ubG5nXSkuYWRkVG8obWFwKTtcblxubWFya2VyLmJpbmRQb3B1cChgXG4gIDxiPiR7bG9jYXRpb25JbmZvLm5hbWV9PC9iPjxiciAvPlxuICA8YSBocmVmPVwiJHtsb2NhdGlvbkluZm8udXJsfVwiIHRhcmdldD1cIl9ibGFua1wiPkRpcmVjdGlvbnM8L2E+XG5gKTtcblxubWFya2VyLm9wZW5Qb3B1cCgpO1xuIl0sCiAgIm1hcHBpbmdzIjogIk1BRUEsR0FBTSxHQUFlLENBQ25CLEtBQU0sc0JBQ04sSUFBSyx3Q0FDTCxJQUFLLFNBQ0wsSUFBSyxZQUdELEVBQU0sRUFBRSxJQUFJLGFBQWMsQ0FDOUIsT0FBUSxDQUFDLFNBQVUsWUFDbkIsUUFBUyxFQUNULEtBQU0sS0FHUixFQUFFLFVBQVUscURBQXNELENBQ2hFLFlBQ0UsNkZBQ0YsV0FBWSxDQUFDLElBQUssSUFBSyxPQUN0QixNQUFNLEdBRVQsR0FBTSxHQUFTLEVBQUUsT0FBTyxDQUFDLEVBQWEsSUFBSyxFQUFhLE1BQU0sTUFBTSxHQUVwRSxFQUFPLFVBQVU7QUFBQSxPQUNWLEVBQWE7QUFBQSxhQUNQLEVBQWE7QUFBQSxHQUcxQixFQUFPIiwKICAibmFtZXMiOiBbXQp9Cg==
+/* import L from "leaflet"; */
+
+const locationInfo = {
+  name: "Rodgers Auto Repair",
+  url: "https://goo.gl/maps/Mr2qViGCXq3auc2k8",
+  lat: 46.80661,
+  lng: -123.06321,
+};
+
+const map = L.map("leafletMap", {
+  center: [46.80677, -123.06341],
+  minZoom: 6,
+  zoom: 10,
+});
+
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution:
+    '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
+  subdomains: ["a", "b", "c"],
+}).addTo(map);
+
+const marker = L.marker([locationInfo.lat, locationInfo.lng]).addTo(map);
+
+marker.bindPopup(`
+  <b>${locationInfo.name}</b><br />
+  <a href="${locationInfo.url}" target="_blank">Directions</a>
+`);
+
+marker.openPopup();
