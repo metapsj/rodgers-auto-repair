@@ -7,16 +7,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-css": "postcss src/styles/main.css -i public/styles/main.css -w",
-    "build-css": "postcss src/styles/main.css -o public/styles/main.css",
-    "watch-js": "esbuild src/javascripts/main.js --bundle --sourcemap=inline --target=es2016 --outfile=public/javascripts/main.js --watch",
-    "debug-js": "esbuild src/javascripts/main.js --bundle --sourcemap=inline --target=es2016 --outfile=public/javascripts/main.js --servedir=public",
-    "build-js": "esbuild src/javascripts/leaflet-map.js --bundle --sourcemap=inline --minify --target=es2016 --outfile=public/javascripts/leaflet-map.js",
-    "start": "concurrently \"npm:watch-css\" \"npm:watch-js\"",
-    "dev": "concurrently \"npm:watch-css\" \"npm:watch-js\"",
-    "copy": "copyfiles -u 1 src/index.html \"src/assets/**/*\" public/",
-    "deploy": "npm run build-css && npm run build-js && npm run copy"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -28,20 +22,13 @@
     "url": "https://github.com/metapsj/rodgers-auto-repair/issues"
   },
   "homepage": "https://github.com/metapsj/rodgers-auto-repair#readme",
-  "dependencies": {
-    "leaflet": "^1.7.1",
-    "tailwindcss": "^2.2.16"
-  },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^4.0.3",
-    "concurrently": "^6.3.0",
-    "copyfiles": "^2.4.1",
-    "cssnano": "^5.0.8",
-    "esbuild": "^0.13.3",
-    "postcss": "^8.3.8",
-    "postcss-cli": "^9.0.1",
-    "postcss-copy": "^7.1.0",
-    "postcss-import": "^14.0.2",
-    "postcss-nested": "^5.0.6"
+    "@tailwindcss/aspect-ratio": "^0.3.0",
+    "@tailwindcss/forms": "^0.3.4",
+    "alpinejs": "^3.4.2",
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.17",
+    "vite": "^2.6.10"
   }
 }
